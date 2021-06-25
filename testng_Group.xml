@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="ModuleOneTest">
+  <groups>
+  <define name="regression1">
+  <include name = "firstgroup" />
+  <include name = "secondgroup" />
+  </define>
+    <define name="regression2">
+  <include name = "thirdgroup" />
+  </define>
+  <run>
+  <include name="regression2"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="mvnsampleE2.TestNGGoogleTest"/>
+       <class name="mvnsampleE2.TestNGSampleTwo"/>
+    </classes>
+  </test> <!-- ModuleOneTest -->
+</suite> <!-- Suite -->

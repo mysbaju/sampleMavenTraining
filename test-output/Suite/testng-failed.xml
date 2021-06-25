@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test name="ModuleOneTest(failed)">
+    <classes>
+      <class name="dataScriptsTestNG.DataParamTest">
+        <methods>
+          <include name="login" invocation-numbers="0 0 1 1"/>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- dataScriptsTestNG.DataParamTest -->
+    </classes>
+  </test> <!-- ModuleOneTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
